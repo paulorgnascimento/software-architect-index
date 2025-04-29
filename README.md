@@ -1,109 +1,86 @@
 # Arquitetura de Soluções e Software
 
-## 1. Fundamentos da Arquitetura de Soluções
-### 1.1 Conceitos Essenciais
-### 1.2 Diferença entre Arquitetura de Software e Arquitetura de Soluções
-### 1.3 Papel e Responsabilidades do Arquiteto
-- 1.3.1 Competências Técnicas
-- 1.3.2 Competências Não Técnicas
-- 1.3.3 Ética e Responsabilidade Profissional
-- 1.3.4 Comunicação e Colaboração
-  - 1.3.4.1 Com Equipes Técnicas
-  - 1.3.4.2 Com Stakeholders
-  - 1.3.4.3 Com Lideranças
-### 1.4 Visão de Negócios e Estratégia
-### 1.5 Qualidade e Métricas
-### 1.6 Governança de Arquitetura
+## Parte 1: Fundamentos da Arquitetura de Soluções
+- [1.1 O que é Arquitetura de Software e Soluções](#)
+- [1.2 Responsabilidades do Arquiteto](#)
+  - [1.2.1 Competências Técnicas](#)
+  - [1.2.2 Competências Comportamentais](#)
+- [1.3 Requisitos Arquiteturais (Non-Functional Requirements)](#)
+- [1.4 Pensamento Sistêmico e Visão de Negócio](#)
+- [1.5 Well-Architected Framework (WAF)](#)
+  - [1.5.1 Excelência Operacional](#)
+  - [1.5.2 Segurança](#)
+  - [1.5.3 Confiabilidade](#)
+  - [1.5.4 Eficiência de Performance](#)
+  - [1.5.5 Otimização de Custos](#)
+  - [1.5.6 Sustentabilidade](#)
 
-## 2. Modelagem e Design de Arquitetura
-### 2.1 Técnicas de Modelagem
-### 2.2 Visões e Pontos de Vista
-### 2.3 Principais Modelos e Frameworks
-- 2.3.1 Modelo C4
-- 2.3.2 Domain-Driven Design (DDD)
-- 2.3.3 Frameworks Arquiteturais
-### 2.4 Estilos e Padrões Arquiteturais
-- 2.4.1 Monolitos
-- 2.4.2 Microserviços
-- 2.4.3 Serverless
-- 2.4.4 Arquitetura Evolutiva
-### 2.5 Boas Práticas de Documentação
-- 2.5.1 Architecture Decision Records (ADR)
-- 2.5.2 Templates de Documentação (Arc42, TOGAF)
-- 2.5.3 Diagramas Arquiteturais (UML, C4)
-- 2.5.4 Documentação Viva e Automatizada
+## Parte 2: Modelagem e Design Arquitetural
+- [2.1 Visões Arquiteturais (4+1 Views Model)](#)
+- [2.2 Técnicas de Modelagem](#)
+  - [2.2.1 Modelo C4](#)
+  - [2.2.2 UML e BPMN](#)
+- [2.3 Domain-Driven Design (DDD)](#)
+  - [2.3.1 Bounded Contexts](#)
+  - [2.3.2 Context Mapping](#)
+  - [2.3.3 Strategic Design Patterns](#)
+- [2.4 Event Storming](#)
+- [2.5 Orquestração vs Coreografia de Serviços](#)
+- [2.6 Arquitetura Evolutiva](#)
+  - [2.6.1 Fitness Functions](#)
+  - [2.6.2 Experimentação Controlada](#)
+- [2.7 Documentação de Arquitetura](#)
+  - [2.7.1 Architecture Decision Records (ADR)](#)
+  - [2.7.2 Arc42, TOGAF e Documentação Viva](#)
 
-## 3. Padrões Arquiteturais
-### 3.1 Coordenação e Consistência de Serviços
-- 3.1.1 Saga Pattern
-- 3.1.2 Two-Phase Commit
-- 3.1.3 API Composition
-- 3.1.4 Event Sourcing
-- 3.1.5 CQRS (Command Query Responsibility Segregation)
-- 3.1.6 Deduplicacão e Idempotência
-### 3.2 Padrões de Cache e Performance
-- 3.2.1 Cache-Aside (Lazy Loading)
-- 3.2.2 Write-Through Cache
-- 3.2.3 Write-Behind (Write-Back) Cache
-- 3.2.4 Cache Invalidation Strategies
-- 3.2.5 Distributed Caching
-- 3.2.6 Content Delivery Networks (CDN)
+## Parte 3: Estilos e Padrões Arquiteturais
+- [3.1 Monolitos Moduláveis](#)
+- [3.2 Microsserviços](#)
+- [3.3 Arquitetura Serverless](#)
+- [3.4 Arquitetura Orientada a Eventos (Event-Driven Architecture - EDA)](#)
+- [3.5 Arquitetura Event Sourcing](#)
+- [3.6 Padrões Arquiteturais Clássicos](#)
+  - [3.6.1 Saga Pattern](#)
+  - [3.6.2 Two-Phase Commit](#)
+  - [3.6.3 API Composition](#)
+  - [3.6.4 CQRS (Command Query Responsibility Segregation)](#)
 
-## 4. Segurança em Arquitetura de Software
-### 4.1 Fundamentos de Segurança
-### 4.2 Modelagem de Ameaças
-### 4.3 SAST (Static Application Security Testing)
-### 4.4 DAST (Dynamic Application Security Testing)
-### 4.5 Políticas de Segurança e Conformidade
-### 4.6 Autenticação, Autorização e Proteção de APIs
-### 4.7 Zero Trust Architecture
-### 4.8 Segurança em Infraestrutura como Código (IaC)
+## Parte 4: Qualidades Arquiteturais (Ilities)
+- [4.1 Disponibilidade](#)
+- [4.2 Escalabilidade](#)
+- [4.3 Desempenho e Latência](#)
+- [4.4 Resiliência](#)
+- [4.5 Segurança](#)
+- [4.6 Observabilidade](#)
+- [4.7 Manutenibilidade e Evolutividade](#)
+- [4.8 Portabilidade e Interoperabilidade](#)
 
-## 5. Arquitetura em Nuvem
-### 5.1 Conceitos Básicos de Cloud Computing
-### 5.2 Arquitetura Multi-cloud e Híbrida
-### 5.3 Infraestrutura como Código (IaC)
-### 5.4 Escalabilidade e Disponibilidade
-### 5.5 Custos e FinOps
-### 5.6 Padrões de Arquitetura Resiliente
-- 5.6.1 Retry Pattern
-- 5.6.2 Circuit Breaker
-- 5.6.3 Bulkhead Pattern
-- 5.6.4 Timeout e Backoff Exponencial
-- 5.6.5 Failover e Disaster Recovery
-- 5.6.6 Multi-Region Deployments
-### 5.7 Arquitetura para Sistemas de Missão Crítica
-- 5.7.1 Requisitos de Alta Disponibilidade (HA)
-- 5.7.2 Redundância de Componentes
-- 5.7.3 Failover Automatizado
-- 5.7.4 Tolerância a Falhas
-- 5.7.5 Planejamento de Recuperação de Desastres (DRP)
-- 5.7.6 Monitoramento e Alerta de Alta Sensibilidade
-- 5.7.7 Testes de Chaos Engineering
-### 5.8 Arquiteturas para Alta Disponibilidade
-- 5.8.1 Multi-AZ (Availability Zone) Architectures
-- 5.8.2 Load Balancing Global e Regional
-- 5.8.3 Replicação de Dados Síncrona e Assíncrona
-- 5.8.4 Estratégias de Failover Geográfico
-- 5.8.5 Banco de Dados Multi-Regional e Clusterizados
-- 5.8.6 Backup Contínuo e Recovery Testing
-- 5.8.7 Aplicativos Stateless e Resilientes
-### 5.9 Arquiteturas para Alto Desempenho e Performance
-- 5.9.1 Escalabilidade Horizontal e Vertical
-- 5.9.2 Balanceamento de Carga Dinâmico
-- 5.9.3 Otimização de Latência e Proximidade Regional
-- 5.9.4 Edge Computing e CDN para Redução de Latência
-- 5.9.5 Otimização de Banco de Dados (Sharding, Read Replicas, Indexação)
-- 5.9.6 Compressão e Cache de Conteúdo
-- 5.9.7 Arquiteturas Event-Driven e Serverless para Alta Concurrency
+## Parte 5: Arquitetura em Nuvem
+- [5.1 Fundamentos de Cloud Computing](#)
+- [5.2 Arquitetura Multi-Cloud e Híbrida](#)
+- [5.3 Infraestrutura como Código (IaC)](#)
+- [5.4 Arquiteturas Resilientes](#)
+  - [5.4.1 Retry Pattern](#)
+  - [5.4.2 Circuit Breaker](#)
+  - [5.4.3 Bulkhead](#)
+  - [5.4.4 Timeout e Backoff Exponencial](#)
+  - [5.4.5 Failover e Disaster Recovery](#)
+  - [5.4.6 Multi-Region Deployments](#)
+- [5.5 Arquiteturas de Alta Disponibilidade](#)
+  - [5.5.1 Multi-AZ Architectures](#)
+  - [5.5.2 Load Balancing Global e Regional](#)
+  - [5.5.3 Replicação de Dados Síncrona e Assíncrona](#)
+- [5.6 Arquiteturas de Alto Desempenho](#)
+  - [5.6.1 Escalabilidade Horizontal e Vertical](#)
+  - [5.6.2 Otimização de Latência e Proximidade](#)
+  - [5.6.3 Edge Computing e CDNs](#)
+  - [5.6.4 Banco de Dados para Alta Performance (Sharding, Read Replicas)](#)
+  - [5.6.5 Compressão e Cache Distribuído](#)
+- [5.7 FinOps: Otimização de Custos em Cloud](#)
 
-## 6. Governança e Gestão de Arquitetura
-### 6.1 Estruturação do Architecture Review Board (ARB)
-### 6.2 Ciclo de Vida da Arquitetura
-- 6.2.1 Planejamento Estratégico
-  - 6.2.1.1 Análise de Negócios
-  - 6.2.1.2 Avaliação de Tecnologias
-  - 6.2.1.3 Priorizacção e Roadmaps
-- 6.2.2 Implementação e Entrega Contínua
-- 6.2.3 Revisão e Melhoria Contínua
-
+## Parte 6: Governança e Evolução Arquitetural
+- [6.1 Estruturação de Architecture Review Board (ARB)](#)
+- [6.2 Ciclo de Vida da Arquitetura](#)
+  - [6.2.1 Planejamento Estratégico](#)
+  - [6.2.2 Implementação e Entrega Contínua](#)
+  - [6.2.3 Revisão, Avaliação e Melhoria Contínua](#)
